@@ -29,12 +29,21 @@ console.log(id, 'id'); // Output: 169 'id'
 var id = 171;
 console.log(id, 'id'); // Output: 171 'id'
 
+
+
+
+
+
 // ex2: `var` ignores block scope
 if(true){
     var city = "Tirupati";
 }
 console.log(city, 'city'); // Output: Tirupati 'city' (Accessible outside the block)
 //Since `var` is not block-scoped, the `city` variable is accessible outside the `if` block.
+
+
+
+
 
 // ex3: `var` in function scope
 var num = 10; // Global variable
@@ -48,18 +57,28 @@ console.log(num); // Output: 10
 
 
 
+
+
+
 // VARIABLES: let
 
 //The variable is only available inside the block {} where you define it.
 /*
-  `let` is used to declare variables in JavaScript.
+  - `let` is used to declare variables in JavaScript.
   - Block-scoped: The variable is only accessible within the block `{}` where it is defined.
   - Cannot be redeclared in the same scope but can be reassigned.
-  - - Hoisted but not initialized (access before declaration causes an error).
+  - Hoisted but not initialized (access before declaration causes an error).
  */
 
-let fName = "Kamali"; //Globally scoped variable
-console.log(fName, "fName");
+
+
+
+let firstName = "Kamali"; //Globally scoped variable
+console.log(firstName, "firstName");
+console.log(typeof firstName);  //string
+
+
+
 
 
 //ex1:Block scope with `let`
@@ -69,6 +88,10 @@ function exampleLetScope() {
 }
 exampleLetScope();
 // console.log(blockScoped); // Error: `blockScoped` is not defined (block-scoped)
+
+
+
+
 
 
 //ex2: Block scope with `let`
@@ -81,6 +104,10 @@ function fWithBlockScope() {
     // console.log(b); // Error: `b` is not defined (block-scoped)
 }
 fWithBlockScope();
+
+
+
+
 
 //ex3:Redeclaring and reassigning with `let`
 
@@ -95,6 +122,12 @@ let count = 10; // Declaration
 // Reassigning is allowed
 count = 20; // Reassignment allowed
 console.log(count); // Output: 20
+console.log(typeof count);  //number
+
+
+
+
+
 
 
 //ex4: Hoisting with `let`
@@ -109,6 +142,12 @@ console.log(age); // Output: 30
 //Unlike `var`, which initializes to `undefined` during hoisting, `let` does not initialize.
  
 
+
+
+
+
+
+
 // VARIABLES: const
 //`const` is used to declare variables whose values cannot be reassigned. 
 /*
@@ -117,9 +156,16 @@ console.log(age); // Output: 30
   - However, properties of objects or elements of arrays declared with `const` can still be modified.
  */
 
-  //ex1: Declaring a `const` variable
+
+
+
+
+
+//ex1: Declaring a `const` variable
 const lName = "Ethiraj";
 console.log(lName, "lName");
+
+
 
 
 
@@ -129,16 +175,16 @@ const value = 10;
 
 
 //ex3:Using `const` with objects
-const obj = {
+const objData = {
     prop1: 10,
     prop2: 9
 }
 
 // Modifying object properties is allowed
-obj.prop1 = 3
-console.log(obj.prop1); // Output: 3
+objData.prop1 = 3
+console.log(objData.prop1); // Output: 3
 
 // Reassigning the entire object is not allowed
-// obj = { b: 10, prop2: 9 }; // Error: Assignment to constant variable
+// objData = { b: 10, prop2: 9 }; // Error: Assignment to constant variable
 
 
