@@ -93,8 +93,8 @@ for (let key in person) {
 //     // Code to execute
 //   }
 
-const fruits = ["Apple", "Banana", "Cherry"];
-for (let fruit of fruits) {
+const fruitBasket = ["Apple", "Banana", "Cherry"];
+for (let fruit of fruitBasket) {
   console.log(fruit);
 }
 // Output: Apple, Banana, Cherry

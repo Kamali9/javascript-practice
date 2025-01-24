@@ -73,10 +73,10 @@ console.log(arr, typeof arr, "arr"); //object
 console.log(Array.isArray(arr)); //true
 
 
-function greet() {
-    return `Hello!`;
+function greet(names) {
+    return `Hello! ${names}`;
 }
-greet();
+greet('Kamali');
 console.log(greet()); // Hello!
 console.log(typeof greet()); //string
 console.log(typeof greet); // function

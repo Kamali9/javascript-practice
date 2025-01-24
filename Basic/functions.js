@@ -178,8 +178,8 @@ function outer() {
 
 
 //14. Pure Functions: A pure function always produces the same output for the same input and does not cause side effects.
-function add(a, b) {
+function pureAdd(a, b) {
     return a + b;
   }
-  console.log(add(2, 3)); // Output: 5
+  console.log(pureAdd(2, 3)); // Output: 5
   
