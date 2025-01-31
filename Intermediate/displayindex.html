@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+
+      header, footer {
+        background-color: #f54266;
+        text-align: center;
+        padding: 1em;
+        color: #fff;
+      }
+      nav {
+        /* background-color: #5534eb; */
+        background-color: #183251;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1em 0px;
+      }
+      ul {
+        list-style-type: none;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      ul li a {
+        color: #fff;
+        list-style-type: none;
+        text-decoration: none;
+      }
+
+      ul li a:hover {
+        color: #75e92d;
+        /* color: #180433; */
+      }
+      nav ul:nth-last-child(2) {
+        margin-left: auto;
+      }
+      .conatiner {
+        display: flex;
+      }
+      aside {
+        width: 30%;
+        border: 1px solid #42e6f5;
+      }
+      main {
+        width: 70%;
+        border: 1px solid #9042f5;
+      }
+      figcaption{
+        text-align: center;
+        font-style: italic;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section class="main-cointainer">
+      <header>
+        <h1>Semantic HTML using Display Properties</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="google.com" target="_blank">Home</a></li>
+        </ul>
+        <ul>
+          <li><a href="bing.com" target="_blank">About</a></li>
+        </ul>
+        <ul>
+          <li><a href="yahoo.com" target="_blank">Services</a></li>
+        </ul>
+        <ul>
+          <li><a href="youtube.com" target="_blank">Careers</a></li>
+        </ul>
+        <ul>
+          <li><a href="gmail.com" target="_blank">Contact us</a></li>
+        </ul>
+      </nav>
+      <div class="conatiner">
+        <aside>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi culpa cupiditate, quibusdam fugiat distinctio explicabo corporis nobis veritatis laboriosam eius, ipsa omnis voluptatum quidem iure, id in corrupti. Animi, cumque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cupiditate sapiente nobis. Praesentium magni veniam sed enim, iure, accusamus odio odit reprehenderit ipsam recusandae minima mollitia cumque et tempora nostrum.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati nulla dicta, cumque sunt deserunt, totam facere iusto eligendi placeat porro praesentium quibusdam inventore rerum fugiat iste maxime. Minima, omnis ipsa.
+        </aside>
+        <main>
+          <!-- Main section -->
+          <article>
+            <!-- Article -->
+            <figure>
+              <img src="https://www.w3schools.com/css/paris.jpg" alt="Paris">
+              <!-- <img
+                alt="File:Weather icon - full moon.svg"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Weather_icon_-_full_moon.svg/512px-Weather_icon_-_full_moon.svg.png?20171221205157"
+                decoding="async"
+                width="512"
+                height="512"
+                srcset="
+                  https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Weather_icon_-_full_moon.svg/768px-Weather_icon_-_full_moon.svg.png?20171221205157  1.5x,
+                  https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Weather_icon_-_full_moon.svg/1024px-Weather_icon_-_full_moon.svg.png?20171221205157 2x
+                "
+                data-file-width="512"
+                data-file-height="512"
+                width="100%"
+                height="100%"
+              /> -->
+            </figure>
+            <figcaption>Full Moon</figcaption>
+
+            <p>Hello p TAG</p>
+          </article>
+          <section>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+            ad quidem harum deleniti. Molestiae, natus consequatur. Quam,
+            architecto sequi molestias distinctio ea quos dolore placeat,
+            aliquid eaque laudantium dolor amet.
+          </section>
+        </main>
+      </div>
+      <footer>Hooray! you reached the end of the website</footer>
+    </section>
+  </body>
+</html>
